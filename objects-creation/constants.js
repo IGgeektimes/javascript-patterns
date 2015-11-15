@@ -17,7 +17,7 @@ var constant = (function () {
             if (this.isDefined(name)) {
                 return false;
             }
-            if (!ownProp.call(allow, typeof value)) {
+            if (!ownProp.call(allowed, typeof value)) {
                 return false;
             }
             constants[prefix + name] = value;
